@@ -2,12 +2,8 @@
 
 cluster core module for cgjs
 
-#### How to contribute
+### How doe it work ?
 
-The [@cgjs/timers](https://github.com/cgjs/cgjs-timers) module is the most basic example of a structure suitable to develop and test [cgjs](https://github.com/cgjs/cgjs) core.
+Basically the whole logic is based on `GLib.spawn_async_with_pipes` and a temporary file as communication channel.
 
-#### APIs
-
-  * [Gnome API Reference](https://developer.gnome.org/references) for GJS and Gtk internals
-  * [NodeJS API Reference](https://nodejs.org/api/documentation.html)
-  * [GJS Examples](https://github.com/optimisme/gjs-examples)
+Every worker will be a spawn of the file that forked it and for what I could test, this seems to work pretty well.
