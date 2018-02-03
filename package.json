@@ -1,6 +1,6 @@
 {
   "name": "@cgjs/cluster",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "cluster core module for cgjs",
   "scripts": {
     "test": "cgjs ./test"
